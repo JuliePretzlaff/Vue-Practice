@@ -37,3 +37,10 @@ var app4 = new Vue({
   }
 })
 
+var app5 = new Vue({ 
+  el: '#app5',
+  data: {
+      message5: 'Hello Vue!'
+  }
+});
+

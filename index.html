@@ -24,10 +24,17 @@
             </ol>
         </div>
 
-        <!-- event listeners -->
+        <!-- event listeners /functions  -->
         <div id='app4'>
             <p>{{ message4 }}</p>
             <button v-on:click="reverseMessage">Click to Reverse Message</button>
+        </div>
+
+        <!-- v-model -->
+        <div id="app5">
+            <p>see what you type!</p>
+           <p>{{ message5 }}</p>
+            <input v-model="message5">
         </div>
 
 
