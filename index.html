@@ -5,14 +5,17 @@
     </head>
     <body>
         
+        <!-- sending a message from Vue to DOM -->
         <div id="app1">
             {{ message }}
         </div>
 
+        <!-- if statement -->
         <div id="app2">
             <span v-if="seen">hidden text!</span>
         </div>
 
+        <!-- for loops -->
         <div id="app3">
             <ol>
                 <li v-for="todo in todos">
@@ -20,7 +23,14 @@
                  </li>
             </ol>
         </div>
-        
+
+        <!-- event listeners -->
+        <div id='app4'>
+            <p>{{ message4 }}</p>
+            <button v-on:click="reverseMessage">Click to Reverse Message</button>
+        </div>
+
+
         <script src="index.js"></script>
     </body>
 </html>

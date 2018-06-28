@@ -23,5 +23,17 @@ var app3 = new Vue({
     ]
   }
 })
-
 app3.todos.push({ text: 'New Item' })
+
+var app4 = new Vue({
+  el: '#app4',
+  data: {
+    message4: 'Hello again Vue!'
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message4 = this.message4.split('').reverse().join('')
+    }
+  }
+})
+
