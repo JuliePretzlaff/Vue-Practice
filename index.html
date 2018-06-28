@@ -37,6 +37,16 @@
             <input v-model="message5">
         </div>
 
+        <!-- components system -->
+        <div id="app6">
+                <ol>
+                    <tudo-item
+                        v-for="item in groceryList"
+                        v-bind:tudo="item"
+                        v-bind:key="item.id">
+                    </tudo-item>
+                </ol>
+            </div>
 
         <script src="index.js"></script>
     </body>
